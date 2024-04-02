@@ -8,15 +8,15 @@ inputValue = prompt("Введіть значення");
     switch(units){
         case("км"):
         resultValue = inputValue*1000;
-        alert(resultValue + " " + units);
+        alert(resultValue + " " + "м");
         break;
         case("кг"):
         resultValue = inputValue*1000;
-        alert(resultValue + " " + units);
+        alert(resultValue + " " + "г");
         break;
         case("год"):
         resultValue = inputValue*60;
-        alert(resultValue + " " + units);
+        alert(resultValue + " " + "хв");
         break;
         default:
             alert("Невірно введені одиниці виміру");
