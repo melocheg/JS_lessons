@@ -1,31 +1,31 @@
 function myisNaN(args){
-
+    return (args !== args);
 
     
-    if( Number.isInteger(args / 1) || Number.isInteger(Number.parseInt(args) / 1 )){
+    /*if( Number.isInteger(args / 1) || Number.isInteger(Number.parseInt(args) / 1 )){
         console.log(false);
     }
     else{
         console.log(true);
-    }
+    }*/
 }
 // in comments there are values, that retutned original func.
 
-myisNaN(NaN); // true
-myisNaN(undefined); // true
-myisNaN({}); // true
+console.log(myisNaN(NaN)); // true
+console.log(myisNaN(undefined)); // true
+console.log(myisNaN({})); // true
 
-myisNaN(true); // false
-myisNaN(null); // false
-myisNaN(37); // false
-myisNaN("37"); // false
-myisNaN("37.37"); // false
-myisNaN(""); // false
-myisNaN(" "); // false
+console.log(myisNaN(true)) // false
+console.log(myisNaN(null)); // false
+console.log(myisNaN(37)); // false
+console.log(myisNaN("37")); // false
+console.log(myisNaN("37.37")); // false
+console.log(myisNaN("")); // false
+console.log(myisNaN(" ")); // false
 
-myisNaN("37,5"); // true  - my func return false, and I dont get how to fix it
+console.log(myisNaN("37,5")); // true  - my func return false, and I dont get how to fix it
 
-myisNaN(new Date()); // false
+console.log(myisNaN(new Date())); // false
 
-myisNaN(new Date().toString()); // true
-myisNaN("blabla"); // true
+console.log(myisNaN(new Date().toString())); // true
+console.log(myisNaN("blabla")); // true
